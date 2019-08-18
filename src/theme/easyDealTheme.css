@@ -1,0 +1,150 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02/08/2019, 22:13:53
+    Author     : Erick Nagoski
+*/
+
+*{
+    hovercolor : #292923;
+    primaryColor : #2A2E37;
+    borderColor : #ffff80;
+    textColor : #f5f5f5;
+    blue: #1976D2;
+    red: #FF0000;
+    darkPrimaryColor:#363636;
+}
+
+.btnStyle{
+    -fx-text-fill: textColor;
+    -fx-background-color: primaryColor;
+    -fx-border-color: borderColor;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12pt;
+}
+
+
+.background{
+    -fx-background-color: primaryColor;   
+}
+
+.button {
+    -fx-text-fill: textColor;
+    -fx-background-color: primaryColor;
+    -fx-border-color: borderColor;
+    
+}
+
+.button:hover{
+    -fx-border-color: borderColor;
+    -fx-background-color: hoverColor;
+
+}
+
+.label{
+    -fx-text-fill: textColor;
+}
+
+.tab-label{
+    -fx-text-fill: textColor;
+    -fx-font-size: 10pt; 
+}
+
+.tab-header-background{
+    -fx-background-color: primaryColor;
+    -fx-border-color: borderColor;
+
+}
+
+.tab{
+    -fx-background-color: primaryColor;
+    -fx-border-color: borderColor;
+    -fx-text-fill: textColor;
+
+}
+
+.tab:hover{
+    -fx-border-color: primaryColor;
+    -fx-background-color: #292923;
+
+}
+
+.menu-bar{
+    -fx-text-fill: textColor;
+    -fx-background-color: primaryColor;
+    -fx-border-color: borderColor;
+
+}
+
+.menu-item .label{
+    -fx-text-fill: textColor;
+}
+
+.menu-bar .label{
+    -fx-text-fill: textColor;
+}
+
+.menu-item{
+    -fx-text-fill: textColor;
+    -fx-background-color: primaryColor;
+    -fx-border-color: borderColor;
+
+}
+
+.menu:hover{
+    -fx-border-color: primaryColor;
+    -fx-background-color:#292923;
+}
+
+.tab-pane{
+    -fx-background-color: primaryColor;
+    -fx-border-color: borderColor;
+}
+
+.separator *.line{
+    -fx-border-color: borderColor;
+    -fx-border-width: 0 0 1 1;
+}
+
+.text-field{
+    -fx-font-size : 12pt;
+    -jfx-focus-color: borderColor;
+}
+
+.checkbox-main{
+    -fx-text-fill: textColor; 
+    -jfx-checked-color: blue;
+    -fx-font-size: 10pt;
+}
+
+.menu-button:hover{
+    -fx-background-color: darkPrimaryColor;
+}
+
+.menu-button, .menu-button .context-menu {
+    -fx-text-fill: textColor;
+    -fx-background-color: primaryColor;
+    
+    -fx-font-size: 12pt; 
+}
+
+.menu-button .menu-item{
+    -fx-text-fill: textColor;
+    -fx-background-color: primaryColor;
+    -fx-border-bottom-color: borderColor;
+    -fx-font-size: 12pt; 
+}
+
+.menu-item:hover{
+    -fx-font-size : 12pt;
+    -fx-background-color : hoverColor;
+    -jfx-focus-color: borderColor;
+}
+
+.menu-button .menu-item .label {
+    -fx-text-fill: textColor ;
+}

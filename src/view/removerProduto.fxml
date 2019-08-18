@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="269.0" prefWidth="189.0" style="-fx-boder-color: #ffff80; -fx-border-width: 5px;" stylesheets="@../theme/easyDealTheme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.RemoverProdutoController">
+   <children>
+      <VBox id="Vbox" layoutX="24.0" layoutY="89.0" prefHeight="363.0" prefWidth="189.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Remoção de Produto">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtNome" prefHeight="31.0" prefWidth="155.0" promptText="Nome">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Nome:" />
+                  <Label fx:id="lblNome">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Valor:" />
+                  <Label fx:id="lblValor">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Categoria:" />
+                  <Label fx:id="lblCategoria">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Qtnd em Estoque:" />
+                  <Label fx:id="lblEstoque">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Garantia:" />
+                  <Label fx:id="lblGarantia">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Validade:" />
+                  <Label fx:id="lblValidade">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="32.0" prefWidth="189.0">
+               <children>
+                  <Button fx:id="btnRemover" mnemonicParsing="false" onAction="#btnRemoverAction" prefHeight="31.0" prefWidth="122.0" text="Remover" />
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#btnCancelarAction" prefHeight="31.0" prefWidth="125.0" text="Cancelar" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="background" />
+      <String fx:value="windowBorder" />
+   </styleClass>
+</AnchorPane>

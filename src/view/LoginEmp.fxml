@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="350.0" style="-fx-background-color: #363636;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginEmpController">
+    <stylesheets>
+        <URL value="@/theme/easyDealTheme.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="125.0" layoutY="103.0" prefHeight="475.0" prefWidth="350.0" style="-fx-border-width: 3; -fx-border-color: #FFFF8D;" stylesheets="@../theme/easyDealTheme.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="119.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="100.0" top="50.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../Icon/icons8-organização-64.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtEmail" promptText="Email">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="txtSenha" promptText="Senha">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="50.0" right="50.0" />
+               </VBox.margin>
+            </PasswordField>
+            <HBox prefHeight="49.0" prefWidth="344.0">
+               <children>
+                  <Button fx:id="btnEntrar" mnemonicParsing="false" onAction="#btnEntrar" prefWidth="125.0" text="Entrar">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/enter.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#btnCancelarAction" prefWidth="125.0" text="Cancelar">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/cancel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="btnCadastro" mnemonicParsing="false" onAction="#CadastroAction" prefHeight="39.0" prefWidth="244.0" text="Cadastrar-se">
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icon/register.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

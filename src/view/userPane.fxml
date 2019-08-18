@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="850.0" styleClass="background" stylesheets="@../theme/easyDealTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserPaneController">
+   <children>
+      <VBox layoutX="80.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox prefHeight="567.0" prefWidth="850.0">
+               <children>
+                  <VBox prefHeight="546.0" prefWidth="289.0">
+                     <children>
+                        <Button fx:id="btnCart" mnemonicParsing="false" onAction="#btnCarrinhoAction" prefHeight="100.0" prefWidth="150.0">
+                           <graphic>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="58.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cart.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label style="-fx-text-fill: whitesmoke;" text="Carrinho">
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnPedidos" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnMyPedidosAction" prefHeight="100.0" prefWidth="150.0">
+                           <graphic>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="58.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/whish.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label style="-fx-text-fill: whitesmoke;" text="Meus Pedidos">
+                                       <VBox.margin>
+                                          <Insets left="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnEncomendas" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#btnEncomendasAction" prefHeight="100.0" prefWidth="150.0">
+                           <graphic>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="58.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/pack.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label style="-fx-text-fill: whitesmoke;" text="Encomendas">
+                                       <VBox.margin>
+                                          <Insets left="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnNewEncomenda" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#btnNewEncomendaAction" prefHeight="91.0" prefWidth="145.0">
+                           <graphic>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="58.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/newPack.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label style="-fx-text-fill: whitesmoke;" text="Nova Encomenda">
+                                       <VBox.margin>
+                                          <Insets left="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnEmpresas" layoutX="10.0" layoutY="210.0" mnemonicParsing="false" onAction="#btnEmpresasAction" prefHeight="100.0" prefWidth="150.0">
+                           <graphic>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="58.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/enterprise.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label style="-fx-text-fill: whitesmoke;" text="Empresas">
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnConta" layoutX="10.0" layoutY="310.0" mnemonicParsing="false" onAction="#btnContaAction" prefHeight="100.0" prefWidth="150.0">
+                           <graphic>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="58.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/account.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label style="-fx-text-fill: whitesmoke;" text="Conta">
+                                       <VBox.margin>
+                                          <Insets left="40.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <TabPane prefHeight="0.0" prefWidth="850.0" styleClass="background" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Inicio">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="522.0" prefWidth="704.0" styleClass="background">
+                                 <children>
+                                    <TableView fx:id="tbProdutos" layoutX="27.0" layoutY="160.0" prefHeight="346.0" prefWidth="665.0">
+                                       <columns>
+                                          <TableColumn fx:id="ColId" prefWidth="75.0" text="Codigo" />
+                                          <TableColumn fx:id="ColNome" prefWidth="92.0" text="Nome" />
+                                          <TableColumn fx:id="ColEmpresa" prefWidth="104.0" text="Empresa" />
+                                          <TableColumn fx:id="ColEstoque" prefWidth="110.0" text="Qtnd.Estoque" />
+                                          <TableColumn fx:id="ColValor" prefWidth="85.0" text="Valor un." />
+                                          <TableColumn fx:id="ColCategoria" prefWidth="110.0" text="Categoria" />
+                                          <TableColumn fx:id="ColDescricao" prefWidth="85.0" text="Descrição" />
+                                       </columns>
+                                    </TableView>
+                                    <TextField layoutX="95.0" layoutY="53.0" prefHeight="31.0" prefWidth="572.0" promptText="Pesquisar Produto" />
+                                    <Button alignment="BASELINE_RIGHT" layoutX="27.0" layoutY="47.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="72.0" textAlignment="CENTER">
+                                       <graphic>
+                                          <ImageView pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/search.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Ofertas">
+                           <content>
+                              <AnchorPane fx:id="rightPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                                 <children>
+                                    <Label layoutX="160.0" layoutY="184.0" text="Label" />
+                                    <Label layoutX="511.0" layoutY="423.0" text="Label" />
+                                    <Label layoutX="160.0" layoutY="423.0" text="Label" />
+                                    <Label layoutX="501.0" layoutY="194.0" text="Label" />
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="443.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="103.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="443.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Separator layoutX="350.0" layoutY="282.0" orientation="VERTICAL" prefHeight="152.0" prefWidth="2.0" />
+                                    <Separator layoutX="349.0" layoutY="53.0" orientation="VERTICAL" prefHeight="152.0" prefWidth="2.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Menos de R$ 5,00">
+                           <content>
+                              <AnchorPane fx:id="rightPane1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                                 <children>
+                                    <Label layoutX="160.0" layoutY="184.0" text="Label" />
+                                    <Label layoutX="511.0" layoutY="423.0" text="Label" />
+                                    <Label layoutX="160.0" layoutY="423.0" text="Label" />
+                                    <Label layoutX="501.0" layoutY="194.0" text="Label" />
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="443.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="103.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="443.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Separator layoutX="350.0" layoutY="282.0" orientation="VERTICAL" prefHeight="152.0" prefWidth="2.0" />
+                                    <Separator layoutX="349.0" layoutY="53.0" orientation="VERTICAL" prefHeight="152.0" prefWidth="2.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Menos de R$ 10,00">
+                           <content>
+                              <AnchorPane fx:id="rightPane11" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                                 <children>
+                                    <Label layoutX="160.0" layoutY="184.0" text="Label" />
+                                    <Label layoutX="511.0" layoutY="423.0" text="Label" />
+                                    <Label layoutX="160.0" layoutY="423.0" text="Label" />
+                                    <Label layoutX="501.0" layoutY="194.0" text="Label" />
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="443.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="103.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="443.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/foto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Separator layoutX="350.0" layoutY="282.0" orientation="VERTICAL" prefHeight="152.0" prefWidth="2.0" />
+                                    <Separator layoutX="349.0" layoutY="53.0" orientation="VERTICAL" prefHeight="152.0" prefWidth="2.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

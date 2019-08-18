@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="img" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../theme/easyDealTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VerProdutoController">
+   <children>
+      <ImageView fx:id="imgProd" fitHeight="167.0" fitWidth="190.0" layoutX="82.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/foto.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblPreco" layoutX="320.0" layoutY="101.0" text="Preço">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTitulo" layoutX="320.0" layoutY="37.0" text="titulo">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <Slider fx:id="SldQtnd" blockIncrement="1.0" layoutX="324.0" layoutY="173.0" prefHeight="14.0" prefWidth="150.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="320.0" layoutY="74.0" text="Categoria:" />
+      <Label layoutX="324.0" layoutY="138.0" text="Quantidade" />
+      <TextFlow layoutX="22.0" layoutY="237.0" prefHeight="127.0" prefWidth="268.0">
+         <children>
+            <Label fx:id="lblDescricao" text="Texto" />
+         </children>
+      </TextFlow>
+      <Pane fx:id="pnlVestuario" layoutX="323.0" layoutY="246.0" prefHeight="103.0" prefWidth="160.0" visible="false">
+         <children>
+            <Button layoutX="21.0" layoutY="52.0" mnemonicParsing="false" text="Add ao Carrinho" />
+            <CheckBox layoutX="3.0" layoutY="9.0" mnemonicParsing="false" text="P" />
+            <CheckBox layoutX="36.0" layoutY="9.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="17.0" text="M" />
+            <CheckBox layoutX="72.0" layoutY="10.0" mnemonicParsing="false" text="G" />
+            <CheckBox layoutX="100.0" layoutY="10.0" mnemonicParsing="false" text="GG" />
+         </children>
+      </Pane>
+      <Button fx:id="btnAddCart" layoutX="348.0" layoutY="215.0" mnemonicParsing="false" text="Add ao Carrinho" />
+      <Label layoutX="324.0" layoutY="283.0" text="Produtos que você pode gostar" />
+      <ImageView fx:id="imgProdAle" fitHeight="103.0" fitWidth="130.0" layoutX="311.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/foto.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgProdAle2" fitHeight="103.0" fitWidth="130.0" layoutX="451.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/foto.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="22.0" layoutY="207.0" text="Descrição" />
+      <Button fx:id="btnCarregaImg" layoutX="113.0" layoutY="203.0" mnemonicParsing="false" onAction="#carregaImgAction" text="Carregar img" />
+      <Label fx:id="lblCategoria" layoutX="385.0" layoutY="74.0" text="Label" />
+   </children>
+</AnchorPane>

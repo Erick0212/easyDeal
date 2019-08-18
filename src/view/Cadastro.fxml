@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="350.0" styleClass="background" stylesheets="@../theme/easyDealTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroController">
+    <children>
+      <VBox prefHeight="540.0" prefWidth="350.0" style="-fx-border-width: 3; -fx-border-color: #FFFF8D;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txtNome" promptText="Nome" style="-fx-font-size: 12pt;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtCpf" promptText="CPF / CNPJ" style="-fx-font-size: 12pt;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="txtSenha" promptText="Senha" style="-fx-font-size: 12pt;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <PasswordField fx:id="txtConfirma" promptText="Confirmação de senha" style="-fx-font-size: 12pt;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <TextField fx:id="txtTelefone" promptText="Telefone" style="-fx-font-size: 12pt;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtEndereco" promptText="Endereço">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtEmail" promptText="E-mail" style="-fx-font-size: 12pt;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="32.0" prefWidth="344.0">
+               <children>
+                  <CheckBox fx:id="cbTermos" mnemonicParsing="false" style="-fx-text-fill: white;" text="Aceitar termos de uso : " />
+                  <Hyperlink text="Termos">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="106.0" prefWidth="344.0">
+               <children>
+                  <Button fx:id="btnConfirma" mnemonicParsing="false" onAction="#btnConfirmaAction" prefWidth="250.0" style="-fx-border-color: #FFFF8D; -fx-background-color: #2A2E37; -fx-text-fill: white; -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-font-size: 12pt;" text="Confirmar">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="bntCancelar" mnemonicParsing="false" onAction="#btnCancelarAction" prefWidth="250.0" style="-fx-border-color: #FFFF8D; -fx-background-color: #2A2E37; -fx-text-fill: white; -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-font-size: 12pt;" text="Cancelar">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="850.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InicialController">
+    <stylesheets>
+        <URL value="@/theme/easyDealTheme.css" />
+    </stylesheets>
+   <children>
+      <MenuButton layoutX="647.0" layoutY="27.0" mnemonicParsing="false" text="Login">
+        <items>
+          <MenuItem fx:id="LogCliente" mnemonicParsing="false" onAction="#btnLoginCli" text="Cliente" />
+          <MenuItem fx:id="LogEmpresa" mnemonicParsing="false" onAction="#btnLoginEmp" text="Empresa" />
+        </items>
+      </MenuButton>
+      <Button fx:id="btnCadastro" layoutX="750.0" layoutY="27.0" mnemonicParsing="false" onAction="#CadastroAction" text="Cadastro" />
+   </children>
+</AnchorPane>

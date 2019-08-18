@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" styleClass="background" stylesheets="@../theme/easyDealTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastraProdutoController">
+   <children>
+      <ImageView fx:id="imgView" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/foto.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="21.0" prefHeight="400.0" prefWidth="168.0">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/new_product.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="50.0" top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <TextField fx:id="txtNome" promptText="Nome do Produto">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtValor" promptText="Valor R$:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtQntdEstoque" promptText="Qntd em estoque">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <MenuButton mnemonicParsing="false" popupSide="RIGHT" prefHeight="25.0" prefWidth="169.0" text="Categoria">
+              <items>
+                  <RadioMenuItem fx:id="menItemAlimento" mnemonicParsing="false" text="Alimento" />
+                  <RadioMenuItem fx:id="menItemEletronicos" mnemonicParsing="false"  text="Eletronico" />
+                  <RadioMenuItem fx:id="menItemInformatica" mnemonicParsing="false"  text="Informática" />
+                  <RadioMenuItem fx:id="menItemEntretenimento" mnemonicParsing="false"  text="Entretenimento" />
+                  <RadioMenuItem fx:id="menItemRoupas" mnemonicParsing="false"  text="Roupas" />
+                  <RadioMenuItem fx:id="menItemCasa" mnemonicParsing="false" text="Casa e decoração" />
+                  <RadioMenuItem fx:id="menItemEletro" mnemonicParsing="false"  text="Eletro" />
+                  <RadioMenuItem fx:id="menItemInfantil" mnemonicParsing="false" text="Infantil" />
+                  <RadioMenuItem fx:id="menItemCultura" mnemonicParsing="false" text="Cultura" />
+                  <RadioMenuItem fx:id="menItemSaude" mnemonicParsing="false" text="Saúde" />
+                  <RadioMenuItem fx:id="menItemFerramentas" mnemonicParsing="false" text="Ferramentas" />
+                  <RadioMenuItem fx:id="menItemJardim" mnemonicParsing="false" text="Jardim" />
+                  <RadioMenuItem fx:id="menItemOutros" mnemonicParsing="false" text="Outros" />
+              </items>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </MenuButton>
+            <RadioButton fx:id="cbPromo" mnemonicParsing="false" style="-fx-text-fill: white;" text="Promoção ">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <TextField fx:id="txtGarantia" promptText="Garantia">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtValidade" promptText="Validade">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="22.0" prefWidth="168.0">
+               <children>
+                  <CheckBox fx:id="cbPP" mnemonicParsing="false" style="-fx-text-fill: white;" text="PP">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="cbP" mnemonicParsing="false" style="-fx-text-fill: white;" text="P">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="cbM" mnemonicParsing="false" style="-fx-text-fill: white;" text="M">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="168.0">
+               <children>
+                  <CheckBox fx:id="cbGG" mnemonicParsing="false" style="-fx-text-fill: white;" text="GG">
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="cbG" mnemonicParsing="false" style="-fx-text-fill: white;" text="G">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </CheckBox>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <CheckBox fx:id="cbTds" mnemonicParsing="false" style="-fx-text-fill: white;" text="Todos os tamanhos">
+               <padding>
+                  <Insets top="5.0" />
+               </padding></CheckBox>
+         </children>
+      </VBox>
+      
+      <Label layoutX="238.0" layoutY="259.0" style="-fx-text-fill: white;" text="Descrição do produto" />
+      <Button fx:id="btnSelecionar" layoutX="302.0" layoutY="188.0" mnemonicParsing="false" onAction="#btnSelecionarAction" prefHeight="25.0" prefWidth="150.0" text="Selecionar img" />
+      <TextArea fx:id="txtDescricao" layoutX="238.0" layoutY="286.0" prefHeight="116.0" prefWidth="327.0" />
+      <Button fx:id="btnFinalizar" layoutX="304.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnFinalizar" prefHeight="33.0" prefWidth="150.0" text="Finalizar" />
+   </children>
+</AnchorPane>
